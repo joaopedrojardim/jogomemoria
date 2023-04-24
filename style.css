@@ -1,0 +1,128 @@
+
+body{
+    margin: 0;
+}
+
+.box{
+    width: 300px;
+    background-color: rgb(54, 54, 54);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    border: 20px solid rgb(25, 25, 25);
+    border-radius: 10px;
+}
+
+.jogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 200px;
+    height: 200px;
+    gap: 10px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.btn{
+    background-color: rgb(13, 78, 22);
+    border: none;
+    border: 6px solid rgb(8, 46, 13);
+}
+
+
+.inicio{
+    display: flex;
+    width: 200px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.blokeioStart{
+    display: none;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.blokeioBtns{
+    display: none;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+}
+
+.resultado{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.244);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start{
+    box-sizing: border-box;
+    background-color: #222;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 2px;
+    color: white;   
+    transition: .1s;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.start:active{
+    border-left: none;
+    border-bottom: none;
+    border-top: 5px solid #010101;
+    border-right: 4px solid #010101;
+}
+
+.display{
+    background-color: rgb(10, 54, 10);
+    padding: 5px;
+    width: 35px;
+    text-align: right;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+}
+
+.mensagem{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(20, 0, 0); 
+    text-transform: uppercase;
+}
+
+.placa{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.placa p{
+    margin: 0 0 15px 0;
+}
+
+.placa button{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
